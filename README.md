@@ -41,6 +41,26 @@ app level build gradle =>
         implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
 
      }
+     
+GridView
+
+
+set Navigaton Host on Activity_Main.xml =>
+
+     <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="141dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
 
 Ref:
