@@ -42,6 +42,23 @@ app level build gradle =>
 
      }
      
+     
+ # pass pararm betweem 2 diff destination using Bundle =>
+ 
+ 
+ sending frag:
+ 
+      // pass param between 2 destinations
+ 
+ 
+ receiving frag:
+ 
+       // pass param between 2 destinations
+        var st = arguments?.getString("j")
+        this.tv2!!.text = st
+
+     
+     
 # Navigation
 
 
