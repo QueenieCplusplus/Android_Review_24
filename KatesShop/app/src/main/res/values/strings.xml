@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kates E-Shop App</string>
+    <string name="todo">todo</string>
+    <string name="gg2">welcome to @KatesApp(PattyAppier) </string>
+    <string name="now_we_are_in_frag">now we are in frag</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">This is the Detail Info from the Item you choosed from</string>
+    <string name="price">Price</string>
+    <string name="red_for_sell">#E60000</string>
+</resources>
