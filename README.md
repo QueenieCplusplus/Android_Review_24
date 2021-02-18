@@ -48,7 +48,20 @@ app level build gradle =>
  
  sending frag:
  
-      // pass param between 2 destinations
+      
+       this.component!!.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            Toast.makeText(this.activity, "selected item：" + label[position], Toast.LENGTH_SHORT).show()
+            
+            
+            // pass param between 2 destinations
+            val j = label[position].toString()
+            val bundle = bundleOf("j" to j)
+            findNavController().navigate(R.id.action_mainFragment_to_detailFragment, bundle)
+            
+            
+            
+            //findNavController().navigate(action_mainFragment_to_detailFragment)
+      }
  
  
  receiving frag:
