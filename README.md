@@ -7,6 +7,21 @@ GridView, Pass Param between two diff Destination within NavigationUI
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_24/main/output3.png)
 
+safe-args:
+
+top level build gradle =>
+
+
+    dependencies {
+
+        def nav_version = "2.3.3"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        
+        ...
+        
+      }
+
+
 Ref:
 
 https://www.itread01.com/content/1544675943.html (debug)
