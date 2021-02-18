@@ -7,7 +7,7 @@ GridView, Pass Param between two diff Destination within NavigationUI
 
 ![](https://raw.githubusercontent.com/QueenieCplusplus/Android_Review_24/main/output3.png)
 
-safe-args:
+# safe-args:
 
 top level build gradle =>
 
@@ -42,7 +42,7 @@ app level build gradle =>
 
      }
      
-GridView
+# Navigation
 
 
 set Navigaton Host on Activity_Main.xml =>
@@ -93,6 +93,33 @@ set Navigaton Host on Activity_Main.xml =>
             android:label="fragment_detail"
             tools:layout="@layout/fragment_detail" />
     </navigation>
+
+# GridView
+
+   add GridView component in one of the fragment to do overview UI.
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.main.MainFragment">
+
+            <GridView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="auto_fit"
+                android:gravity="center"
+                android:columnWidth="135dp"
+                android:stretchMode="columnWidth">
+
+            </GridView>
+
+        </RelativeLayout>
 
 
 Ref:
