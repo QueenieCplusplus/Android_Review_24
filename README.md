@@ -20,6 +20,27 @@ top level build gradle =>
         ...
         
       }
+      
+app level build gradle =>
+
+
+    plugins {
+        id 'com.android.application'
+        id 'kotlin-android'
+        id 'kotlin-kapt'
+        id 'androidx.navigation.safeargs.kotlin'
+
+    }
+
+
+    dependencies {
+
+
+        // Navigation
+        implementation "android.arch.navigation:navigation-fragment-ktx:$version_navigation"
+        implementation "android.arch.navigation:navigation-ui-ktx:$version_navigation"
+
+     }
 
 
 Ref:
