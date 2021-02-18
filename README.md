@@ -151,7 +151,40 @@ set Navigaton Host on Activity_Main.xml =>
                 android:textSize="15dp" />
         </LinearLayout>
    
+   onViewCreated phase of the overview frag =>
    
+   
+        val view: View = inflater.inflate(R.layout.main_fragment, container, false)
+        //gv = view.findViewById<GridView>(R.id.gv)
+        
+        val items = ArrayList<Map<String, Any>>()
+        for (i in img.indices) {
+            val item = HashMap<String, Any>()
+            item["image"] = img[i]
+            item["text"] = label[i]
+            items.add(item)
+        }
+        
+        val kadapter = SimpleAdapter(this.activity,
+                items, R.layout.grid_view_item, arrayOf("image", "text"),
+                intArrayOf(R.id.img, txt))
+
+        gv = view.findViewById(R.id.gv)
+
+        this.gv!!.adapter = kadapter
+        this.gv!!.numColumns = 2
+        this.gv!!.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            Toast.makeText(this.activity, "selected item：" + label[position], Toast.LENGTH_SHORT).show()
+            val j = label[position].toString()
+            //val i =  img[position].toInt()
+            // pass param between 2 destinations
+            val bundle = bundleOf("j" to j)
+            //val bundle = bundleOf("i" to i)
+            findNavController().navigate(R.id.action_mainFragment_to_detailFragment, bundle)
+            //findNavController().navigate(action_mainFragment_to_detailFragment)
+
+        }
+        return view
 
 
 Ref:
