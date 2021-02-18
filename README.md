@@ -11,3 +11,17 @@ Ref:
 
 https://www.itread01.com/content/1544675943.html (debug)
 
+https://proandroiddev.com/migrating-the-deprecated-kotlin-android-extensions-compiler-plugin-to-viewbinding-d234c691dec7 (kotlin-android-extensions is deprecated)
+
+https://stackoverflow.com/questions/65185166/disable-kotlin-android-extensions-deprecation-warning kotlin-android-extensions is deprecated)
+
+https://developer.android.com/guide/navigation/navigation-pass-data (pass data)
+
+https://www.jianshu.com/p/ffa19d26f65f (fragment)
+
+https://stackoverflow.com/questions/44214136/what-does-r-drawable-image-return (type cast)
+
+https://givemepass.blogspot.com/2011/11/gridview.html (SimpleAdapter & GridView)
+
+http://hk.uwenku.com/question/p-cnphanaq-vu.html (GridView)
+
